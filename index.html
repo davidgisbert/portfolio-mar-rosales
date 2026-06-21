@@ -9,28 +9,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--sand:#E8DECF;--ivory:#F4EEE3;--umber:#2C2018;--clay:#B5663C;--olive:#6E6A48;--muted:#8A7F6E;--line:#C9BBA5;--maxw:1180px}
+:root{--sand:#e3ebf2;--ivory:#f3f6f9;--umber:#272030;--clay:#c79a99;--olive:#504665;--muted:#8f83a0;--line:#ccd5dd;--maxw:1180px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--sand);color:var(--umber);font-family:"League Spartan",system-ui,sans-serif;font-weight:400;line-height:1.65;letter-spacing:.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--clay);font-weight:600}
 a{color:inherit;text-decoration:none}
-header{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(20px,5vw,48px);background:rgba(232,222,207,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(20px,5vw,48px);background:rgba(39,32,48,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--clay);color:var(--clay)}
 .brand{font-weight:800;font-size:1.3rem;letter-spacing:.12em;text-transform:uppercase}
 .brand span{color:var(--clay)}
+.brand-logo{height:72px;width:auto;display:block}
 nav ul{display:flex;gap:clamp(14px,2.4vw,34px);list-style:none;align-items:center}
-nav a{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;position:relative;padding:4px 0;cursor:pointer}
+nav a{font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;position:relative;padding:4px 0;cursor:pointer}
 nav a::after{content:"";position:absolute;left:0;bottom:-2px;height:1px;width:0;background:var(--clay);transition:width .3s ease}
 nav a:hover::after,nav a:focus-visible::after{width:100%}
-.menu-btn{display:none;background:none;border:none;cursor:pointer;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--umber);font-weight:600;font-family:inherit}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);font-weight:600;font-family:inherit}
 /* HERO solo texto */
-.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;
+.hero{min-height:55vh;display:flex;flex-direction:column;justify-content:center;
   padding:150px clamp(20px,5vw,48px) 70px;max-width:var(--maxw);margin:0 auto}
 .hero .issue{display:flex;gap:14px;align-items:center;margin-bottom:22px;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .hero h1{font-weight:900;font-size:clamp(5rem,22vw,16rem);line-height:.8;letter-spacing:-.02em;text-transform:uppercase;margin:0 0 26px}
 .hero h1 em{display:block;font-style:normal;font-weight:500;color:var(--clay);font-size:.12em;letter-spacing:.34em;margin-top:.8em;text-transform:uppercase}
 /* 👉 Texto del hero — lo cambiaremos por el tuyo */
-.hero .lead{max-width:46ch;font-size:clamp(1.05rem,1.6vw,1.35rem);font-weight:400;color:var(--umber)}
+.hero .lead{max-width:52ch;font-size:clamp(1.2rem,1.9vw,1.6rem);font-weight:400;color:var(--umber)}
+.hero-logo{height:auto;width:clamp(280px,40vw,620px);display:block;margin-bottom:10px}
 /* ACORDEÓN */
 .acc{border-top:1px solid var(--line)}
 .acc:last-of-type{border-bottom:1px solid var(--line)}
@@ -48,19 +50,24 @@ nav a:hover::after,nav a:focus-visible::after{width:100%}
 .acc-panel>.acc-min{overflow:hidden;min-height:0}
 .acc-inner{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,48px) clamp(50px,7vw,90px)}
 /* fondos por sección */
-.acc.dark{background:var(--umber);color:var(--sand)}
-.acc.dark .acc-head{color:var(--sand)}
-.acc.dark .acc-head h2{color:var(--sand)}
-.acc.dark .acc-head:hover h2{color:var(--clay)}
-.acc.dark .acc-head .ico{border-color:rgba(232,222,207,.35)}
+.acc.dark{background:var(--umber);color:var(--clay)}
+.acc.dark .acc-head{color:var(--clay)}
+.acc.dark .acc-head h2{color:var(--clay)}
+.acc.dark .acc-head:hover h2{color:var(--ivory)}
+.acc.dark .acc-head .ico{border-color:rgba(199,154,153,.35)}
+.acc.dark .eyebrow{color:var(--clay)}
+.acc.dark .acc-head .num{color:var(--clay)}
+.acc.dark p{color:var(--clay)}
+.acc.dark .srv-btn{color:var(--clay)}
+.acc.dark .srv-btn h3{color:var(--clay)}
 .acc.tint{background:var(--ivory)}
 /* MAR */
-.about{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(30px,6vw,80px);align-items:center}
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(30px,6vw,80px);align-items:start}
 .about-img{aspect-ratio:4/5;border:1px solid var(--line);position:relative}
 .ph{width:100%;height:100%;object-fit:cover;display:block;background:var(--ivory)}
-.ph-box{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--ivory),#ddd0bb);color:var(--muted);text-align:center;padding:20px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+.ph-box{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--ivory),#b8c8d8);color:var(--muted);text-align:center;padding:20px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
 .about-text p{margin-bottom:1.2em;font-size:1.05rem}
-.about-text p:first-of-type{font-weight:500;font-size:clamp(1.3rem,2.4vw,1.9rem);line-height:1.4}
+.about-text p:first-of-type{font-weight:400;font-size:1.05rem}
 /* WORK slider */
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
 .filter{font-family:inherit;font-weight:600;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;padding:10px 18px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;transition:.2s ease}
@@ -70,13 +77,13 @@ nav a:hover::after,nav a:focus-visible::after{width:100%}
 .slider{position:relative}
 .slider-viewport{overflow:hidden}
 .track{display:none}
-.track.active{display:flex;gap:clamp(10px,1.4vw,18px);transition:transform .65s cubic-bezier(.4,0,.2,1);will-change:transform}
+.track.active{display:flex;gap:clamp(10px,1.4vw,18px);transition:transform .3s cubic-bezier(.4,0,.2,1);will-change:transform}
 .slide{flex:0 0 clamp(200px,28vw,340px);position:relative;aspect-ratio:2/3;overflow:hidden;cursor:pointer}
 .slide img.ph{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.25,.46,.45,.94)}
 .slider-viewport:hover .slide img.ph{transform:none}
 .slide:hover img.ph{transform:scale(1.06)}
-.slide .ph-box{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--ivory),#ddd0bb);color:var(--muted);text-align:center;padding:20px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
-.slide-cap{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:20px 16px 16px;color:var(--ivory);background:linear-gradient(transparent,rgba(44,32,24,.75));opacity:0;transform:translateY(6px);transition:opacity .35s ease,transform .35s ease}
+.slide .ph-box{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--ivory),#b8c8d8);color:var(--muted);text-align:center;padding:20px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+.slide-cap{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:20px 16px 16px;color:var(--ivory);background:linear-gradient(transparent,rgba(39,32,48,.75));opacity:0;transform:translateY(6px);transition:opacity .35s ease,transform .35s ease}
 .slide:hover .slide-cap,.slide:focus-within .slide-cap{opacity:1;transform:none}
 .slide-cap h3{font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
 .slide-cap span{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;opacity:.8;font-weight:500}
@@ -87,29 +94,38 @@ nav a:hover::after,nav a:focus-visible::after{width:100%}
 .slider-nav{display:flex;gap:8px}
 .arrow{font-family:inherit;width:44px;height:44px;border:1px solid var(--line);background:transparent;color:var(--umber);cursor:pointer;font-size:1rem;transition:background .2s,border-color .2s,color .2s;display:flex;align-items:center;justify-content:center}
 .arrow:hover{background:var(--umber);color:var(--ivory);border-color:var(--umber)}
-/* SERVICIOS */
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(232,222,207,.2);border:1px solid rgba(232,222,207,.2)}
-.service{background:var(--umber);padding:clamp(26px,3vw,40px)}
-.service .s-num{color:var(--clay);font-size:1rem;font-weight:700;letter-spacing:.2em;margin-bottom:18px;text-transform:uppercase}
-.service h3{font-weight:700;font-size:1.3rem;margin-bottom:12px;text-transform:uppercase;letter-spacing:.02em}
-.service p{color:#cdbfac;font-size:.96rem}
+/* SERVICIOS sub-acordeón */
+.srv-list{border-top:1px solid var(--line);margin-top:clamp(24px,3.5vw,44px)}
+.srv-item{border-bottom:1px solid var(--line)}
+.srv-btn{width:100%;display:flex;align-items:center;gap:clamp(14px,2vw,28px);background:transparent;border:none;cursor:pointer;font-family:inherit;color:var(--umber);text-align:left;padding:clamp(18px,2.4vw,30px) 0}
+.srv-btn .s-num{font-size:.65rem;letter-spacing:.24em;color:var(--clay);font-weight:600;text-transform:uppercase;flex:0 0 2ch;padding-top:.2em}
+.srv-btn h3{font-weight:300;font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em;text-transform:uppercase;flex:1;line-height:1}
+.srv-btn .srv-ico{flex:0 0 auto;width:30px;height:30px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--muted);font-weight:300;transition:transform .4s ease,background .3s,border-color .3s}
+.srv-item.open .srv-btn .srv-ico{transform:rotate(45deg);background:var(--clay);color:var(--ivory);border-color:var(--clay)}
+.srv-btn:hover h3{color:var(--clay)}
+.srv-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.4,0,.2,1)}
+.srv-item.open .srv-body{grid-template-rows:1fr}
+.srv-body>.srv-min{overflow:hidden;min-height:0}
+.srv-body p{padding:0 0 clamp(22px,3vw,38px) calc(2ch + clamp(14px,2vw,28px));font-size:clamp(.98rem,1.3vw,1.1rem);max-width:58ch;color:var(--muted);line-height:1.75}
 /* APPOINTMENTS */
 .appoint{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,80px);align-items:center}
 .appoint h2.big{font-weight:800;font-size:clamp(2rem,5vw,3.4rem);line-height:.98;margin-bottom:22px;text-transform:uppercase;letter-spacing:-.01em}
 .appoint h2.big em{font-style:normal;color:var(--clay)}
 .appoint p{font-size:1.05rem;max-width:42ch;margin-bottom:30px}
 .btn{display:inline-flex;align-items:center;gap:12px;background:var(--clay);color:var(--ivory);padding:16px 30px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;transition:background .3s ease,transform .3s ease;font-family:inherit}
-.btn:hover,.btn:focus-visible{background:var(--umber);transform:translateY(-2px)}
+.btn:hover,.btn:focus-visible{background:#3b0a0a;transform:translateY(-2px)}
 .contact-list{list-style:none;margin-top:36px}
 .contact-list li{padding:14px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}
 .contact-list .k{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .contact-list .v{font-weight:500}
 .appoint-card{background:var(--ivory);border:1px solid var(--line);padding:clamp(30px,4vw,48px);position:relative}
 .appoint-card::before{content:"";position:absolute;inset:9px;border:1px solid var(--clay);opacity:.4;pointer-events:none}
-footer{background:var(--sand);padding:50px clamp(20px,5vw,48px)}
+footer{background:var(--umber);color:var(--clay);padding:50px clamp(20px,5vw,48px)}
 .foot{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
 .foot .brand{font-size:1.5rem}
-.foot small{color:var(--muted);font-size:.78rem;letter-spacing:.04em}
+.foot small{color:var(--clay);font-size:.78rem;letter-spacing:.04em;opacity:.7}
+.foot-logos{display:flex;gap:20px;align-items:center}
+.foot-img{height:48px;width:auto;display:block}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
 .reveal.in{opacity:1;transform:none}
 @media(max-width:860px){
@@ -136,7 +152,7 @@ footer{background:var(--sand);padding:50px clamp(20px,5vw,48px)}
 </head>
 <body>
 <header>
-  <a class="brand" href="#top">Mar<span>.</span></a>
+  <a class="brand" href="#top"><img class="brand-logo" src="fotos porfolio/logo/logo white.png" alt="MR Studio"></a>
   <nav>
     <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">Menú</button>
     <ul>
@@ -151,16 +167,14 @@ footer{background:var(--sand);padding:50px clamp(20px,5vw,48px)}
 <a id="top"></a>
 <!-- HERO solo texto -->
 <div class="hero reveal">
-  <div class="issue"><span>Portfolio</span><span>·</span><span>Diseñadora de moda</span></div>
-  <h1>Mar<em>Diseño que se viste</em></h1>
-  <!-- 👉 TEXTO DEL HERO: cámbialo por el que me digas -->
-  <p class="lead">[ Aquí irá tu texto de presentación — me lo dirás y lo coloco ]</p>
+  <img class="hero-logo" src="fotos porfolio/logo/logo sin contornos black.png" alt="MR Studio">
+  <p class="lead">Diseño colecciones con dos manos: una creativa y otra comercial,<br>porque la moda más bonita es la que se acaba llevando.</p>
 </div>
 
 <main>
   <!-- MAR -->
-  <section class="acc tint open" id="mar">
-    <button class="acc-head" aria-expanded="true" aria-controls="panel-mar">
+  <section class="acc dark" id="mar">
+    <button class="acc-head" aria-expanded="false" aria-controls="panel-mar">
       <span class="inner"><span class="num">01</span><h2>Quién soy</h2><span class="label">Sobre Mar</span><span class="ico" aria-hidden="true">+</span></span>
     </button>
     <div class="acc-panel" id="panel-mar"><div class="acc-min"><div class="acc-inner">
@@ -169,9 +183,11 @@ footer{background:var(--sand);padding:50px clamp(20px,5vw,48px)}
           <img class="ph" src="fotos porfolio/presentacio/1.jpg" alt="Retrato de Mar" onerror="this.style.display='none';this.parentElement.innerHTML='&lt;div class=\'ph-box\'&gt;Retrato&lt;/div&gt;'">
         </div>
         <div class="about-text">
-          <p>Diseño moda desde la convicción de que una prenda bien pensada cambia cómo te mueves por el mundo.</p>
-          <p>Soy Mar, diseñadora de moda freelance. Trabajo con marcas, proyectos personales y clientes que buscan piezas con carácter: desde el primer boceto hasta el patrón final.</p>
-          <p>Cada proyecto empieza con una conversación. Cuéntame qué necesitas y construimos algo a tu medida.</p>
+          <p>Soy Mar, diseñadora de moda y fundadora de Mr Studio, en Barcelona.</p>
+          <p>Diseño moda pensada para llevarse y, sobre todo, para venderse. A los 18 años me fui de Sant Carles de la Ràpita a Milán para formarme en el Istituto Marangoni, donde desarrollé mi lado más creativo. Pero pronto entendí que una buena colección no termina en el papel: tiene que funcionar en tienda. Por eso trabajé en el sector del lujo, aprendiendo de primera mano qué necesita el cliente y por qué compra.</p>
+          <p>Esa doble mirada —creativa y comercial— es la que pongo hoy al servicio de las marcas. He diseñado para distintas empresas y me he especializado en swimwear y beachwear, prêt-à-porter de plana y punto, y homewear, así que entiendo las exigencias técnicas de cada producto. Lo vivo además desde dentro: soy fundadora de Luau Studio, mi propia marca de vestidos de fiesta, así que conozco de primera mano lo que supone construir una firma y llevarla hasta el cliente.</p>
+          <p>Me obsesionan los tejidos: la caída, el tacto, la calidad nada más verlos. Al tocarlos, ya imagino la prenda. Y traduzco ese instinto en colecciones coherentes, vendibles y fieles a la identidad de cada marca.</p>
+          <p>Trabajo con las marcas de dos maneras. Por un lado, creo colecciones desde cero, acompañando todo el proceso: inspiración, tejidos, colores, fichas técnicas y fitting, hasta dejarlas listas para producir. Por otro, ofrezco consultoría: una visión externa y actualizada, tanto para marcas que están arrancando como para equipos consolidados que quieren estar al día en tendencias, formas y colores y mejorar en pocos pasos.</p>
         </div>
       </div>
     </div></div></div>
@@ -308,10 +324,23 @@ footer{background:var(--sand);padding:50px clamp(20px,5vw,48px)}
       <span class="inner"><span class="num">03</span><h2>Servicios</h2><span class="label">Cómo puedo ayudarte</span><span class="ico" aria-hidden="true">+</span></span>
     </button>
     <div class="acc-panel" id="panel-serv"><div class="acc-min"><div class="acc-inner">
-      <div class="services">
-        <div class="service"><div class="s-num">i</div><h3>Diseño de colección</h3><p>Desarrollo de colecciones completas: concepto, bocetos, selección de tejidos y fichas técnicas listas para producción.</p></div>
-        <div class="service"><div class="s-num">ii</div><h3>Piezas a medida</h3><p>Prendas únicas diseñadas para ti o para una ocasión especial, desde el patrón hasta el acabado final.</p></div>
-        <div class="service"><div class="s-num">iii</div><h3>Consultoría creativa</h3><p>Acompañamiento a marcas y proyectos: dirección de estilo, patronaje y desarrollo de producto.</p></div>
+      <div class="srv-list">
+        <div class="srv-item open">
+          <button class="srv-btn" aria-expanded="true">
+            <span class="s-num">i</span>
+            <h3>Diseño de moda</h3>
+            <span class="srv-ico" aria-hidden="true">+</span>
+          </button>
+          <div class="srv-body"><div class="srv-min"><p>Creo colecciones adaptadas a la identidad de tu marca, acompañándote hasta donde lo necesites. Puedo encargarme de todo el proceso —inspiración, elección de tejidos y colores, fichas técnicas y fitting— o solo de la parte donde te haga falta una mano. Ideal si buscas a alguien que une criterio creativo y comercial, tanto para una colección completa como para un punto concreto del camino.</p></div></div>
+        </div>
+        <div class="srv-item open">
+          <button class="srv-btn" aria-expanded="true">
+            <span class="s-num">ii</span>
+            <h3>Consultoría de moda</h3>
+            <span class="srv-ico" aria-hidden="true">+</span>
+          </button>
+          <div class="srv-body"><div class="srv-min"><p>Una visión externa y actualizada para tu marca, tanto si estás arrancando como si ya estás consolidada. Ayudo a las marcas nuevas a dar sus primeros pasos con criterio, y a los equipos ya establecidos a estar al día en tendencias, formas y colores. A veces, lo que un equipo necesita para dar un salto no es más gente, sino una mirada externa y al día.</p></div></div>
+        </div>
       </div>
     </div></div></div>
   </section>
@@ -347,6 +376,10 @@ footer{background:var(--sand);padding:50px clamp(20px,5vw,48px)}
 <footer>
   <div class="foot">
     <a class="brand" href="#top">Mar<span>.</span></a>
+    <div class="foot-logos">
+      <img src="fotos porfolio/logos footer/frase.jpg" alt="" class="foot-img">
+      <img src="fotos porfolio/logos footer/logos.jpg" alt="" class="foot-img">
+    </div>
     <small>© <span id="year"></span> Mar Rosales · <a href="aviso-legal.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Aviso legal</a> · <a href="politica-privacidad.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Privacidad</a> · <a href="politica-cookies.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Cookies</a></small>
   </div>
 </footer>
@@ -469,6 +502,8 @@ viewport.addEventListener('mouseenter',()=>clearInterval(autoTimer));
 viewport.addEventListener('mouseleave',()=>startAuto());
 window.addEventListener('resize',()=>goTo(idx));
 goTo(0);startAuto();
+
+// sub-acordeón servicios
 </script>
 </body>
 </html>
