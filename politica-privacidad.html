@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--sand:#E8DECF;--ivory:#F4EEE3;--umber:#2C2018;--clay:#B5663C;--muted:#8A7F6E;--line:#C9BBA5;--maxw:780px}
+:root{--sand:#e3ebf2;--ivory:#f3f6f9;--umber:#272030;--clay:#c79a99;--muted:#8f83a0;--line:#ccd5dd;--maxw:780px}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--sand);color:var(--umber);font-family:"League Spartan",system-ui,sans-serif;font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased}
 a{color:var(--clay);text-decoration:none}
@@ -29,8 +29,12 @@ ul li{margin-bottom:.4em;font-size:1rem}
 table{width:100%;border-collapse:collapse;margin-bottom:1.4em;font-size:.92rem}
 th{text-align:left;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:10px 12px;border-bottom:1px solid var(--line)}
 td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top}
-footer{background:var(--sand);padding:40px clamp(20px,5vw,48px);border-top:1px solid var(--line);text-align:center}
-footer small{color:var(--muted);font-size:.78rem;letter-spacing:.04em}
+footer{background:var(--umber);color:var(--clay);padding:50px clamp(20px,5vw,48px)}
+.foot{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
+.foot .brand{font-size:1.5rem;color:var(--clay)}
+.foot small{color:var(--clay);font-size:.78rem;letter-spacing:.04em;opacity:.7}
+.foot-logos{display:flex;gap:20px;align-items:center}
+.foot-img{height:48px;width:auto;display:block}
 #cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--umber);color:var(--sand);padding:clamp(16px,2.4vw,24px) clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:clamp(16px,3vw,40px);flex-wrap:wrap;border-top:2px solid var(--clay);transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .4s ease}
 #cookie-banner.hidden{transform:translateY(110%);opacity:0;pointer-events:none}
 #cookie-banner p{font-size:.82rem;line-height:1.55;max-width:64ch;color:#cdbfac}
@@ -102,7 +106,14 @@ footer small{color:var(--muted);font-size:.78rem;letter-spacing:.04em}
 </div>
 
 <footer>
-  <small>© <span id="year"></span> Mar Rosales · <a href="aviso-legal.html">Aviso legal</a> · <a href="politica-privacidad.html">Privacidad</a> · <a href="politica-cookies.html">Cookies</a></small>
+  <div class="foot">
+    <a class="brand" href="index.html">Mar<span>.</span></a>
+    <div class="foot-logos">
+      <img src="fotos porfolio/logos footer/frase.jpg" alt="" class="foot-img">
+      <img src="fotos porfolio/logos footer/logos.jpg" alt="" class="foot-img">
+    </div>
+    <small>© <span id="year"></span> Mar Rosales · <a href="aviso-legal.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Aviso legal</a> · <a href="politica-privacidad.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Privacidad</a> · <a href="politica-cookies.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Cookies</a></small>
+  </div>
 </footer>
 
 <div id="cookie-banner" role="dialog" aria-label="Aviso de cookies">
