@@ -6,60 +6,25 @@
 <title>Política de Cookies — Mar Rosales</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{--sand:#e3ebf2;--ivory:#f3f6f9;--umber:#272030;--clay:#c79a99;--muted:#8f83a0;--line:#ccd5dd;--maxw:780px}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--sand);color:var(--umber);font-family:"League Spartan",system-ui,sans-serif;font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased}
-a{color:var(--clay);text-decoration:none}
-a:hover{text-decoration:underline}
-header{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(20px,5vw,48px);background:rgba(39,32,48,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--clay)}
-.brand{font-weight:800;font-size:1.3rem;letter-spacing:.12em;text-transform:uppercase;color:var(--umber)}
-.brand span{color:var(--clay)}
-.brand-logo{height:72px;width:auto;display:block}
-.legal-wrap{max-width:var(--maxw);margin:0 auto;padding:140px clamp(20px,5vw,48px) 100px}
-.back{display:inline-flex;align-items:center;gap:8px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--muted);margin-bottom:48px;transition:color .2s}
-.back:hover{color:var(--clay);text-decoration:none}
-.eyebrow{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--clay);font-weight:600;margin-bottom:14px}
-h1{font-weight:900;font-size:clamp(2.4rem,6vw,4rem);line-height:.95;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:48px}
-.updated{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:56px;padding-bottom:32px;border-bottom:1px solid var(--line)}
-h2{font-weight:700;font-size:1.1rem;text-transform:uppercase;letter-spacing:.08em;margin:40px 0 12px;color:var(--umber)}
-p{margin-bottom:1em;font-size:1rem}
-ul{margin:0 0 1em 1.4em}
-ul li{margin-bottom:.4em;font-size:1rem}
-table{width:100%;border-collapse:collapse;margin-bottom:1.4em;font-size:.92rem}
-th{text-align:left;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:10px 12px;border-bottom:1px solid var(--line)}
-td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top}
-.pill{display:inline-block;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:3px 9px;background:var(--ivory);border:1px solid var(--line)}
-footer{background:var(--umber);color:var(--clay);padding:50px clamp(20px,5vw,48px)}
-.foot{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
-.foot .brand{font-size:1.5rem;color:var(--clay)}
-.foot small{color:var(--clay);font-size:.78rem;letter-spacing:.04em;opacity:.7}
-.foot-logos{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
-.foot-img{height:32px;width:auto;display:block}
-@media(min-width:861px){.foot-logos{flex-direction:row;align-items:center;gap:20px}.foot-img{height:48px}}
-#cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--umber);color:var(--sand);padding:clamp(16px,2.4vw,24px) clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:clamp(16px,3vw,40px);flex-wrap:wrap;border-top:2px solid var(--clay);transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .4s ease}
-#cookie-banner.hidden{transform:translateY(110%);opacity:0;pointer-events:none}
-#cookie-banner p{font-size:.82rem;line-height:1.55;max-width:64ch;color:#cdbfac}
-#cookie-banner p a{color:var(--clay);text-decoration:underline;text-underline-offset:3px}
-.cookie-actions{display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap}
-.cb-btn{font-family:inherit;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;padding:12px 22px;cursor:pointer;border:1px solid;transition:background .2s,color .2s,border-color .2s;white-space:nowrap}
-.cb-accept{background:var(--clay);color:var(--ivory);border-color:var(--clay)}
-.cb-accept:hover{background:var(--sand);color:var(--umber);border-color:var(--sand)}
-.cb-reject{background:transparent;color:var(--sand);border-color:rgba(232,222,207,.3)}
-.cb-reject:hover{border-color:var(--sand)}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="legal.css">
+<link rel="stylesheet" href="language.css"><script src="language.js" defer></script>
 </head>
 <body>
-<header>
-  <a class="brand" href="index.html"><img class="brand-logo" src="fotos porfolio/logo/logo white.png" alt="MR Studio"></a>
+<header class="site-header">
+  <a href="index.html#inicio" aria-label="MR Studio, ir al inicio"><img class="header-logo" src="fotos porfolio/logo/logo sin contornos black.png" alt="mr.studio"></a>
+  <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menú</button>
+  <nav class="desktop-nav" id="main-nav" aria-label="Navegación principal">
+    <a href="index.html#inicio">Inicio</a><a href="index.html#sobre-mi">Sobre mí</a><a href="index.html#servicios">Servicios</a><a href="index.html#portfolio">Portfolio</a><a href="index.html#contacto">Contacto</a>
+  </nav>
+  <div class="language-switch" role="group" aria-label="Language / Idioma / Lingua"><button type="button" data-lang="es" lang="es" aria-label="Español">ES</button><span aria-hidden="true">/</span><button type="button" data-lang="en" lang="en" aria-label="English">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="it" lang="it" aria-label="Italiano">IT</button></div>
 </header>
 
 <div class="legal-wrap">
   <a class="back" href="index.html">← Volver</a>
   <p class="eyebrow">Legal</p>
   <h1>Política de Cookies</h1>
-  <p class="updated">Última actualización: junio de 2025</p>
+  <p class="updated">Revisado: junio de 2025</p>
 
   <h2>¿Qué son las cookies?</h2>
   <p>Las cookies son pequeños archivos de texto que los sitios web almacenan en tu dispositivo cuando los visitas. Sirven para recordar preferencias, analizar el uso del sitio o mostrar contenido personalizado.</p>
@@ -76,13 +41,14 @@ footer{background:var(--umber);color:var(--clay);padding:50px clamp(20px,5vw,48p
         <td>Solicitud de tipografía</td>
         <td>Google Fonts (fonts.googleapis.com)</td>
         <td><span class="pill">Técnica</span></td>
-        <td>Cargar la fuente League Spartan desde los servidores de Google. Google puede registrar la IP del visitante.</td>
+        <td>Cargar las fuentes DM Sans y Manrope desde los servidores de Google. Google puede registrar la IP del visitante.</td>
         <td>Sesión</td>
       </tr>
     </tbody>
   </table>
 
   <p>Actualmente no se utilizan cookies de analítica, seguimiento, publicidad ni redes sociales. Esta política se actualizará cuando se incorporen herramientas de medición de visitas o comunicación por correo electrónico.</p>
+  <p>La elección de idioma se guarda en el almacenamiento local del navegador, no en una cookie. Puedes eliminarla borrando los datos del sitio en tu navegador.</p>
 
   <h2>Cómo gestionar o desactivar las cookies</h2>
   <p>Puedes configurar tu navegador para bloquear o eliminar cookies en cualquier momento. Ten en cuenta que esto puede afectar al correcto funcionamiento de algunos sitios web. Aquí tienes los enlaces de ayuda de los navegadores más habituales:</p>
@@ -94,22 +60,13 @@ footer{background:var(--umber);color:var(--clay);padding:50px clamp(20px,5vw,48p
   </ul>
 
   <h2>Actualizaciones de esta política</h2>
-  <p>Esta política puede actualizarse si se incorporan nuevas funcionalidades al sitio. La fecha de «última actualización» en la parte superior siempre reflejará la versión vigente.</p>
+  <p>Esta política puede actualizarse si se incorporan nuevas funcionalidades al sitio. La fecha de «revisión» en la parte superior indicará cuándo se revisó el texto.</p>
 
   <h2>Contacto</h2>
   <p><strong>Mar Rosales Viura</strong> · NIF 47475387P<br>C/ Enamorats 74, 3º 4ª, 08013 Barcelona<br><a href="mailto:mar@mar-rosales.com">mar@mar-rosales.com</a></p>
 </div>
 
-<footer>
-  <div class="foot">
-    <a class="brand" href="index.html">Mar<span>.</span></a>
-    <div class="foot-logos">
-      <img src="fotos porfolio/logos footer/frase.jpg" alt="" class="foot-img">
-      <img src="fotos porfolio/logos footer/logos.jpg" alt="" class="foot-img">
-    </div>
-    <small>© <span id="year"></span> Mar Rosales · <a href="aviso-legal.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Aviso legal</a> · <a href="politica-privacidad.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Privacidad</a> · <a href="politica-cookies.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Cookies</a></small>
-  </div>
-</footer>
+<footer><div class="footer-top"><img src="fotos porfolio/logos footer/frase.jpg" alt="Actuación impulsada y subvencionada por el Departament d’Empresa i Treball y cofinanciada por la Unión Europea" loading="lazy"><img src="fotos porfolio/logos footer/logos.jpg" alt="Logotipos de las entidades financiadoras" loading="lazy"></div><div class="footer-bottom"><span>© <span id="year"></span> Mar Rosales</span><nav aria-label="Enlaces legales"><a href="aviso-legal.html">Aviso legal</a><a href="politica-privacidad.html">Privacidad</a><a href="politica-cookies.html">Cookies</a></nav></div></footer>
 
 <div id="cookie-banner" role="dialog" aria-label="Aviso de cookies">
   <p>Usamos cookies técnicas necesarias para el funcionamiento del sitio. Puedes consultar nuestra <a href="politica-cookies.html">política de cookies</a> y nuestra <a href="politica-privacidad.html">política de privacidad</a>.</p>
@@ -129,5 +86,6 @@ document.getElementById('year').textContent=new Date().getFullYear();
   document.getElementById('cb-reject').addEventListener('click',()=>dismiss('necessary'));
 })();
 </script>
+<script src="legal-nav.js"></script>
 </body>
 </html>
