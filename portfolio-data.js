@@ -4,52 +4,52 @@ window.portfolioCategories = {
     "description": "Diseño prendas tanto de tejido de plana como de punto para el día a día, siempre dentro de colecciones con identidad propia. En cada propuesta, la silueta, el color y los detalles dan forma al carácter de la marca.",
     "images": [
       {
-        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-1 - TCN - SS24.jpg",
+        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-1 - TCN - SS24.jpg",
         "alt": "Prêt-à-porter de TCN, SS24",
         "caption": "TCN / SS24"
       },
       {
-        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-2 - TCN - SS23.jpg",
+        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-2 - TCN - SS23.jpg",
         "alt": "Prêt-à-porter de TCN, SS23",
         "caption": "TCN / SS23"
       },
       {
-        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-3 - TCN - SS24jpg.jpg",
+        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-3 - TCN - SS24jpg.jpg",
         "alt": "Prêt-à-porter de TCN, SS24",
         "caption": "TCN / SS24"
       },
       {
-        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-4 - TCN - SS24.jpg",
+        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-4 - TCN - SS24.jpg",
         "alt": "Prêt-à-porter de TCN, SS24",
         "caption": "TCN / SS24"
       },
       {
-        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-5 - TCN - SS23.jpg",
+        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-5 - TCN - SS23.jpg",
         "alt": "Prêt-à-porter de TCN, SS23",
         "caption": "TCN / SS23"
       },
       {
-        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-6 - TCN - SS24.jpg",
+        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-6 - TCN - SS24.jpg",
         "alt": "Prêt-à-porter de TCN, SS24",
         "caption": "TCN / SS24"
       },
       {
-        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-7 - TCN - SS23.jpg",
+        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-7 - TCN - SS23.jpg",
         "alt": "Prêt-à-porter de TCN, SS23",
         "caption": "TCN / SS23"
       },
       {
-        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-8 - TCN - SS24.jpg",
+        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-8 - TCN - SS24.jpg",
         "alt": "Prêt-à-porter de TCN, SS24",
         "caption": "TCN / SS24"
       },
       {
-        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-9 - TCN - SS24jpg.jpg",
+        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-9 - TCN - SS24jpg.jpg",
         "alt": "Prêt-à-porter de TCN, SS24",
         "caption": "TCN / SS24"
       },
       {
-        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-10 - TCN - SS23.jpg",
+        "src": "fotos porfolio/tipos producte/1-prêt-à-porter/pret-a-porter-10 - TCN - SS23.jpg",
         "alt": "Prêt-à-porter de TCN, SS23",
         "caption": "TCN / SS23"
       }
