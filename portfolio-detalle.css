@@ -25,6 +25,7 @@
 .portfolio-slider-controls button:hover{opacity:.55}
 .portfolio-slider-controls button:disabled{opacity:.3;cursor:default}
 .portfolio-detail-bottom{display:flex;justify-content:space-between;gap:25px;margin-top:clamp(55px,8vw,105px);font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.portfolio-detail-bottom a span{display:inline-block;width:14px;height:14px;margin-left:4px;background:url('iconos/flecha-diagonal.svg') center/contain no-repeat;vertical-align:-3px}
 @media(max-width:1100px){.portfolio-slide-track{gap:16px}.portfolio-slide{flex-basis:calc(33.333333% - 10.667px)}}
 @media(max-width:900px){.portfolio-detail-intro{grid-template-columns:1fr;gap:24px}.portfolio-detail-intro p{max-width:42ch}}
 @media(max-width:600px){.portfolio-detail-main{padding-top:108px}.portfolio-detail-intro h1{font-size:clamp(3rem,12vw,5rem)}.portfolio-slide-track{gap:10px}.portfolio-slide{flex-basis:calc(50% - 5px)}.portfolio-detail-bottom{flex-direction:column}.portfolio-slider-controls button{font-size:.58rem}}
